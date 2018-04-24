@@ -5,3 +5,4 @@
 .Trashes
 _drafts/*
 Gemfile*
+Gemfile.lock
