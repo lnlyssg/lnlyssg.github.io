@@ -11,6 +11,8 @@ To pull out KDFAES hashes replace `password` with `pwdx` but be aware that this 
 
 Note that this requires a RACF database to be allocated in SE.1 and will not work with a zSecure unload (since they don't contain passwords).  
 
+**Note for RACF admins:** Define `XFACILIT` profiles of `CKG.CMD.FIELD.PASSWORD` and `CKG.CMD.FIELD.PWDX` with `UACC(NONE)` to prevent this from working.  
+
 ```
 newlist nopage
   select  segment=base has_password=yes
