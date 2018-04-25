@@ -1,4 +1,4 @@
-## RDEFINE SITE RACF.GURU
+## RDEFINE SITE RACF.GURU UACC(READ) DATA(‘MISC RACF STUFF AND MUSINGS’)
 
 I really only bought this domain for the email but figured I may as well put _some_ content up alongside it. More content may follow but this will do for now.  
 
@@ -11,9 +11,8 @@ I really only bought this domain for the email but figured I may as well put _so
 ### RACLINK ID(JIM) LIST  
 [Bigendian Smalls](https://bigendiansmalls.com)  
 [Soldier of FORTRAN](https://mainframed767.tumblr.com)  
-[Henri Kuiper](https://zdevops.com)  
-[/r/mainframe](https://reddit.com/r/mainframe/)  
 [Nigel Pentland's Utilities](https://www.nigelpentland.co.uk/utilities/)  
+[/r/mainframe](https://reddit.com/r/mainframe/)  
 
 
 ### LISTUSER JIM
