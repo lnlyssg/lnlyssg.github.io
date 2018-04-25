@@ -2,6 +2,7 @@
 layout: post
 title: Finding RVARY password hashes
 date: 2018-04-25 18:59 +0100
+author: Jim
 tags: RACF RVARY
 ---
 This is also included in [SETRRCVT](https://github.com/jaytay79/zos/blob/master/SETRRCVT.rexx) but to find the DES encrypted RVARY passwords in common storage:  
