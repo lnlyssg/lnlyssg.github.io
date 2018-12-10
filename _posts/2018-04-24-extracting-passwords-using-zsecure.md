@@ -29,7 +29,8 @@ And for KDFAES hashes:
 newlist nopage
   select  segment=base has_password=yes
 /* JtR format */
-  sortlist KEY(0) | ":$racf$*" | key(0) | "*" | password(hex,0)
+  sortlist KEY(0) | ":$racf$*" | key(0) | "*" | pwdx(hex,0) | ,
+   password(hex,0)
 /* Hashcat format*/
   sortlist "$racf$*" | key(0) | "*" | pwdx(hex,0) | ,
    password(hex,0)
