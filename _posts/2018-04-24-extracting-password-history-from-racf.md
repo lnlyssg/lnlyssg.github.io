@@ -2,6 +2,7 @@
 layout: post
 title: Extracting password history from RACF
 date: 2018-04-24 21:48 +0100
+author: Jim
 tags: RACF passwords
 ---
 With thanks to [Dhiru Kholia](https://github.com/kholia), who was able to tidy up the "mystery" [racf_debug.c program](https://gist.github.com/anonymous/848a5219560b18989fcf878e1df034d2), it is possible to extract old passwords for IDs from a RACF database. Unfortunately this is one downside to having an extensive password history enabled on a system - e.g. `SETROPTS HISTORY(12)` means that 12 old passwords are retained in the RACF database to ensure users do not re-use their passwords. It also means that all 12 password hashes are also stored...  
