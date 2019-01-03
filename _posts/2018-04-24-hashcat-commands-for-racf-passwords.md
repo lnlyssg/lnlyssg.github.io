@@ -28,7 +28,7 @@ The below assumes basic knowledge of hashcat as well as having copied my [racf.r
 `./hashcat -m 8500 hashes.txt  -a 3 -1 ?u?d@#£ ?1?1?1?1?1?1?1?1`  
 replace `@#£` with your own national characters as approrpriate e.g. `$` for `£`, `§` for `@` etc.
 
-For an incremental version that cycles through from e.g. 6 characters up to 8 then add `—-increment —-increment-min=6`
+For an incremental version that cycles through from e.g. 6 characters up to 8 then add `--increment --increment-min=6`  
 
 ##### [OA43999](https://www.ibm.com/support/docview.wss?uid=isg1OA43999) version of the above:
 `./hashcat -m 8500 hashes.txt  -a 3 -1 ?u?d#£@.<+|&!*-%_>?:=' ?1?1?1?1?1?1?1?1`
