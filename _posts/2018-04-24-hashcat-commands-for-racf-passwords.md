@@ -11,9 +11,9 @@ Start [here](https://mainframed767.tumblr.com/post/43072129477/how-to-copy-the-r
 
 2. If running Windows, use [Nigel Pentland's racfsnow](https://www.nigelpentland.co.uk/utilities/) which will, as well as crack passwords, also write the hashes out in both hashcat and John the Ripper output.  
 
-Install hashcat and a dictionary file. If MIXEDCASE is not enabled on the system in question then for added cracking speed I would recommend an all uppercase dictionary with words no longer than 8 characters. I suggest starting with one of the dictionaries from [here](https://github.com/berzerk0/Probable-Wordlists) and then editing as needed (e.g. convert all to uppercase, remove words longer than 8 characters etc.). I have already done this for you [here](https://github.com/jaytay79/Probable-Wordlists/tree/RACF/Real-Passwords).     
+Install hashcat and a dictionary file. If MIXEDCASE is not enabled on the system in question then for added cracking speed I would recommend an all uppercase dictionary with words no longer than 8 characters. I suggest starting with one of the dictionaries from [here](https://github.com/berzerk0/Probable-Wordlists) and then editing as needed (e.g. convert all to uppercase, remove words longer than 8 characters etc.). I have already done this for you [here](https://github.com/jaytay79/Probable-Wordlists/blob/RACF/Real-Passwords/Top304Thousand-probable-v2.txt).     
 
-The below assumes basic knowledge of hashcat as well as having copied my [racf.rule](https://github.com/jaytay79/zos/blob/master/racf.rule) file to the rules subdirectory of hashcat. The command format below is for macOS/Unix, for Windows substitue `./hashcat` with `hashcat64.exe` and swap any `/` characters for a `\`  
+The below assumes basic knowledge of hashcat as well as having copied my [racf.rule](https://github.com/jaytay79/zos/blob/master/racf.rule) file to the rules subdirectory of hashcat. The command format below is for macOS/Unix, for Windows substitute `./hashcat` with `hashcat64.exe` and swap any `/` characters for a `\`  
 
 
 
@@ -27,6 +27,8 @@ The below assumes basic knowledge of hashcat as well as having copied my [racf.r
 ### Mask attack for 8 character passwords using uppercase, digits and national characters
 `./hashcat -m 8500 hashes.txt  -a 3 -1 ?u?d@#£ ?1?1?1?1?1?1?1?1`  
 replace `@#£` with your own national characters as approrpriate e.g. `$` for `£`, `§` for `@` etc.
+
+For an incremental version that cycles through from e.g. 6 characters up to 8 then add `—-increment —-increment-min=6`
 
 ##### [OA43999](https://www.ibm.com/support/docview.wss?uid=isg1OA43999) version of the above:
 `./hashcat -m 8500 hashes.txt  -a 3 -1 ?u?d#£@.<+|&!*-%_>?:=' ?1?1?1?1?1?1?1?1`
