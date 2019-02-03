@@ -9,7 +9,7 @@ First of all I recommend finding out the password rules in place, [this](https:/
 
 Then start [here](https://mainframed767.tumblr.com/post/43072129477/how-to-copy-the-racf-database-off-the-mainframe) for the initial steps. You then have two options to get the hashes into the hashcat format of `$racf$*QWERTY1*5AA70358A9C369E0` rather than the John the Ripper format of `QWERTY1:$QWERTY1$*QWERTY1*5AA70358A9C369E0`:
 
-1. After running racf2john use a regex Find/Replace in Notepad++/BBEdit etc. of `^[^:]*:` and replace with nothing (or use grep and sed from a terminal if you prefer)
+1. After running racf2john use a regex Find/Replace in Notepad++/BBEdit etc. of `^[^:]+:` and replace with nothing (or use grep and sed from a terminal if you prefer)
 
 2. If running Windows, use [Nigel Pentland's racfsnow](https://www.nigelpentland.co.uk/utilities/) which will, as well as crack passwords, also write the hashes out in both hashcat and John the Ripper output.  
 
