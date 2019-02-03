@@ -5,7 +5,9 @@ date: 2018-04-24 21:41 +0100
 author: Jim
 tags: RACF passwords
 ---
-Start [here](https://mainframed767.tumblr.com/post/43072129477/how-to-copy-the-racf-database-off-the-mainframe) for the initial steps. You then have two options to get the hashes into the hashcat format of `$racf$*QWERTY1*5AA70358A9C369E0` rather than the John the Ripper format of `QWERTY1:$QWERTY1$*QWERTY1*5AA70358A9C369E0`:
+First of all I recommend finding out the password rules in place, [this](https://github.com/jaytay79/zos/blob/master/SETRRCVT.rexx) may help.  
+
+Then start [here](https://mainframed767.tumblr.com/post/43072129477/how-to-copy-the-racf-database-off-the-mainframe) for the initial steps. You then have two options to get the hashes into the hashcat format of `$racf$*QWERTY1*5AA70358A9C369E0` rather than the John the Ripper format of `QWERTY1:$QWERTY1$*QWERTY1*5AA70358A9C369E0`:
 
 1. After running racf2john use a regex Find/Replace in Notepad++/BBEdit etc. of `^[^:]*:` and replace with nothing (or use grep and sed from a terminal if you prefer)
 
@@ -40,7 +42,7 @@ For an incremental version that cycles through from e.g. 6 characters up to 8 th
 `./hashcat -m 8500 hashes.txt --show --outfile=cracked.txt`  
 
 ___
-If running on a unix based OS I would recommend pulling out the cracked passwords, removing duplicates and then creating a new dictionary file. This file can then be moved between hashcat/John the Ripper and should help speed up any future cracking attempts  
+If running on a unix based OS or using [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) or [cmder](http://cmder.net/) on Windows I would recommend pulling out the cracked passwords, removing duplicates and then creating a new dictionary file. This file can then be moved between hashcat/John the Ripper and should help speed up any future cracking attempts  
   
 ```
 cut -d: -f 2- hashcat.pot | sort -u > cracked.dic
