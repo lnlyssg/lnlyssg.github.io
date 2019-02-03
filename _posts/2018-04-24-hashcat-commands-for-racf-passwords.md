@@ -25,7 +25,7 @@ These examples are ordeerd from quickets to slowest.
 `./hashcat -m 8500 hashes.txt -r rules/racf.rule dictionary.txt`
 
 ### Hybrid attack - uses dictionary and appends 3 numerics - adjust as you see fit
-`./hashcat -m 8500 hashes.txt -a 6 dictioanry.txt ?d?d?d
+`./hashcat -m 8500 hashes.txt -a 6 dictionary.txt ?d?d?d`
 
 ### Mask attack for 8 character passwords using uppercase, digits and national characters
 `./hashcat -m 8500 hashes.txt  -a 3 -1 ?u?d@#£ ?1?1?1?1?1?1?1?1`  
