@@ -15,14 +15,17 @@ Install hashcat and a dictionary file. If MIXEDCASE is not enabled on the system
 
 The below assumes basic knowledge of hashcat as well as having copied my [racf.rule](https://github.com/jaytay79/zos/blob/master/racf.rule) file to the rules subdirectory of hashcat. The command format below is for macOS/Unix, for Windows substitute `./hashcat` with `hashcat64.exe` and swap any `/` characters for a `\`  
 
+These examples are ordeerd from quickets to slowest.  
 
 
 ### Basic dictionary attack
 `./hashcat -m 8500 hashes.txt dictionary.txt`
 
 ### Dictionary with rule
-`./hashcat -m 8500 hahses.txt -r rules/racf.rule dictionary.txt`
+`./hashcat -m 8500 hashes.txt -r rules/racf.rule dictionary.txt`
 
+### Hybrid attack - uses dictionary and appends 3 numerics - adjust as you see fit
+`./hashcat -m 8500 hashes.txt -a 6 dictioanry.txt ?d?d?d
 
 ### Mask attack for 8 character passwords using uppercase, digits and national characters
 `./hashcat -m 8500 hashes.txt  -a 3 -1 ?u?d@#£ ?1?1?1?1?1?1?1?1`  
