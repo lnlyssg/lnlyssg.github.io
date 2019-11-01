@@ -1,13 +1,14 @@
 ## RDEFINE SITE RACF.GURU UACC(READ) DATA(‘RACF TOOLS AND INFO’)
 
-I really only bought this domain for the email but figured I may as well put _some_ content up alongside it.   
+I really only bought this domain for the email address but figured I may as well put _some_ content up alongside it.  
 
 ### ADDSD 'JIM.TOOLS' UACC(READ)  
 [z/OS tools](https://github.com/jaytay79/zos) - SETRRCVT and some other bits and pieces  
-[IRRXUTIL samples](https://github.com/jaytay79/IRRXUTIL) - Samples of IRRXUTIL  
+[IRRXUTIL samples](https://github.com/jaytay79/IRRXUTIL) - Some samples of IRRXUTIL  
 [ENUM](https://github.com/mainframed/Enumeration) - Enumeration Rexx in collaboration with SoF & Ayoul3  
 [Probable Wordlists](https://github.com/jaytay79/Probable-Wordlists/tree/RACF/Real-Passwords) - Passwords edited to conform to UPPERCASE and 8 character max standards.  
 [MFBBEdit Modules](https://github.com/jaytay79/MFBBEditModules) - Modules for [BBEdit](https://www.barebones.com/products/bbedit/) for ReXX and JCL highlighting.  
+[MFWordlists](https://github.com/jaytay79/MFwordlists) - Wordlists for use in cracking RACF passwords
 
 
 ### PERMIT 'JIM.POSTS' ID(*) ACCESS(READ)
@@ -26,7 +27,6 @@ I really only bought this domain for the email but figured I may as well put _so
 [Ayoul3's excellent Privesc tools](https://github.com/ayoul3/Privesc)  
 [/r/mainframe](https://reddit.com/r/mainframe/)  
 
-
-### LISTUSER JIM
+### LISTUSER JIM  
 [LinkedIn](https://www.linkedin.com/in/jim-r-taylor/)  
 [email](mailto:contact@racf.guru)  

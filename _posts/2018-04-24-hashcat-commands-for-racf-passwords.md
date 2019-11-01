@@ -13,7 +13,7 @@ Then start [here](https://mainframed767.tumblr.com/post/43072129477/how-to-copy-
 
 2. If running Windows, use [Nigel Pentland's racfsnow](https://www.nigelpentland.co.uk/utilities/) which will, as well as crack passwords, also write the hashes out in both hashcat and John the Ripper output.  
 
-Install [hashcat](https://hashcat.net/hashcat/) and a dictionary file. If MIXEDCASE is not enabled on the system in question then for added cracking speed I would recommend an all uppercase dictionary with words no longer than 8 characters. I suggest starting with one of the dictionaries from [here](https://github.com/berzerk0/Probable-Wordlists) and then editing as needed (e.g. convert all to uppercase, remove words longer than 8 characters etc.). I have already done this for you [here](https://github.com/jaytay79/Probable-Wordlists/blob/RACF/Real-Passwords/Top304Thousand-probable-v2.txt) because I'm nice like that.   
+Install [hashcat](https://hashcat.net/hashcat/) and a dictionary file. If MIXEDCASE is not enabled on the system in question then for added cracking speed I would recommend an all uppercase dictionary with words no longer than 8 characters. I suggest starting with one of the dictionaries from [here](https://github.com/jaytay79/MFwordlists) which have already been edited to convert the contents to uppercase and remove words longer than 8 characters etc.  
 
 The below assumes basic knowledge of hashcat as well as having copied my [racf.rule](https://github.com/jaytay79/zos/blob/master/racf.rule) file to the rules subdirectory of hashcat. The command format below is for macOS/Unix, for Windows substitute `./hashcat` with `hashcat64.exe` and swap any `/` characters for a `\`  
 
