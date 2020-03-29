@@ -33,4 +33,4 @@ I really only bought this domain for the email address but figured I may as well
 
 * * *  
 
-```Any views or opinions represented on this website are personal and belong solely to me and do not represent those of people, institutions or organizations that the owner may or may not be associated with in a professional or personal capacity, unless explicitly stated.  
+Any views or opinions represented on this website are personal and belong solely to me and do not represent those of people, institutions or organizations that the owner may or may not be associated with in a professional or personal capacity, unless explicitly stated.  
