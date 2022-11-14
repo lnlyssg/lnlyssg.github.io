@@ -29,8 +29,8 @@ I really only bought this domain for the email address but figured I may as well
 
 ### LISTUSER JIM  
 [LinkedIn](https://www.linkedin.com/in/jim-r-taylor/)  
-[Pleroma](https://pleroma.racf.guru/@jaytay){rel="me" style="display: none;"}  
 [email](mailto:contact@racf.guru)  
+<a rel="me" href="https://pleroma.racf.guru/@jaytay" style="display: none;">Pleroma</a>  
 
 * * *  
 
