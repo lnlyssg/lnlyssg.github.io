@@ -7,7 +7,7 @@ tags: ISRDDN
 ---
 1. From a TSO `READY` prompt or in ISPF option 6 `ALLOC DA(ISRDDN.CB) DSORG(PS) SPACE(1,0) TRACKS LRECL(80) RECFM(F,B) BLKSIZE(27920) NEW`
 
-2. Copy the data from [MVS Control Blocks.txt](https://github.com/jaytay79/zos/blob/master/MVS%20Control%20Blocks.txt) into `yourid.ISRDDN.CB`.
+2. Copy the data from [MVS Control Blocks.txt](https://github.com/lnlyssg/zos/blob/master/MVS%20Control%20Blocks.txt) into `yourid.ISRDDN.CB`.
 
 3. Enter `ALLOC F(ISRDDN) DA('yourid.ISRDDN.CB') SHR` from ISPF option 6 (and additonally add this to your logon allocations if required)
 
