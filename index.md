@@ -33,7 +33,7 @@ I really only bought this domain for the email address but figured I may as well
 
 [Linktree](https://linktr.ee/lnlyssg)  
 [email](mailto:contact@racf.guru)  
-<a rel="me" href="https://social.racf.guru/@jaytay" style="display: none;">Mastodon</a>
+<a rel="me" href="https://infosec.exchange/@lnlyssg" style="display: none;">Mastodon</a>
 
 ---
 
